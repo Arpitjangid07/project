@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="logo">
+                    <img src="your-logo.png" alt="Your Website Logo">
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tourist-corner">Tourist Corner</a></li>
+                <li><a href="https://univ.jnujaipur.ac.in/Account/Login?ReturnUrl=%2F">Student Corner</a></li>
+                <li class="search-bar">
+                    <a href="https://chatgpt.com/">Chat GPT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-text">
+                <h1 class="highlight">Smart Tools for Brilliant Minds</h1>
+            </div>            
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="image-rectangle">
+            <img src="banner.jpg" alt="Rectangle Image">
+        </div>
+        <div class="boxes">
+            <a href="previousyear.html" class="box">
+                <img src="PYQP.jpg" alt="Previous Year Questions">
+            </a>
+            <a href="notes.html" class="box">
+                <img src="Notes.jpg" alt="Notes">
+            </a>
+            <a href="#more-resources" class="box">
+                <img src="More_Resources.jpg" alt="More Resources">
+            </a>
+        </div>
+        <div class="announcements">
+            <h2>Important Announcements</h2>
+            <div class="scrolling-images">
+                <img src="img1.jpg" alt="Announcement 1">
+                <img src="img2.jpg" alt="Announcement 2">
+                <img src="img3.jpg" alt="Announcement 3">
+                <img src="img4.jpg" alt="Announcement 4">
+                </div>
+        </div>
+        
+<!-- Button to start the quiz -->
+<div class="quiz-background">
+    <button class="quiz-button" onclick="openQuiz()">Click Here to Start the Quiz</button>
+</div>
+
+<div id="quiz-section" class="quiz">
+</div>
+
+        <!-- Chatbot Section -->
+    <div class="chatbot-section">
+        <div class="chatbot-header">
+            <h2>Chat with Us!</h2>
+            <p>Our chatbot is here to help you with any questions or concerns.</p>
+        </div>
+        <div class="chatbot-container">
+            <div class="chatbot">
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <!-- Messages will be dynamically inserted here -->
+                </div>
+                <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Type your message...">
+                <button class="chatbot-send" id="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
+        
+    </main>    
+
+    <!-- Footer  Section -->
+    <footer>
+        <div class="team">
+            <div class="team-member">
+                <img src="Arpit_Profile.jpg" alt="Person 1">
+                <p>Arpit Jangid</p>
+                <a href="tel:+1234567890">+91 (234) 567-890</a>
+            </div>
+            <div class="team-member">
+                <img src="Harsh_Profile.jpg" alt="Person 2">
+                <p>Harsh Tomar</p>
+                <a href="tel:+0987654321">+91 9720983668</a>
+            </div>
+            <div class="team-member">
+                <img src="Khushi_Profile.jpg" alt="Person 3">
+                <p>Khushi Verma</p>
+                <a href="tel:+1122334455">+91 (122) 334-455</a>
+            </div>
+            <div class="team-member">
+                <img src="person4.jpg" alt="Person 4">
+                <p>Sachin Singh</p>
+                <a href="tel:+5566778899">+91 (567) 788-899</a>
+            </div>
+            <div class="team-member">
+                <img src="Swati_Profile.jpg" alt="Person 5">
+                <p>Swati Sharma</p>
+                <a href="tel:+2233445566">+91 (234) 455-566</a>
+            </div>
+            <div class="team-member">
+                <img src="person6.jpg" alt="Person 6">
+                <p>Vishakha Gehlot</p>
+                <a href="tel:+3344556677">+91 (345) 566-677</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#blog" class="active">Blog</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="#like">Like</a>
+            <a href="#other">Other</a>
+            <a href="#websites">Other Websites</a>
+        </div>
+
+        <div class="copyright">
+            &copy; <span id="year"></span> Your Website Name. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Include the combined JavaScript file -->
+    <script src="scripts.js"></script>
+    <script>
+        function openQuiz() {
+            window.location.href = "https://docs.google.com/forms/d/16qinDGOgTYrV9R-7Aeb9FmSgPSHMDdmfKS56JZC9Y1s/edit";
+        }
+    </script>
+    
+</body>
+</html>
